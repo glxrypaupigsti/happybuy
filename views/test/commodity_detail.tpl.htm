@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<link rel="stylesheet" href="../../static/font/fonticon.css" />
+<link rel="stylesheet" href="../../static/css/commodity.css" />
+<link rel="stylesheet" href="../../static/css/mobile.css" />
+<link rel="stylesheet" href="../../static/css/bootstrap.css" />
+
+<script src="../../static/script/jquery-2.1.1.min.js"></script>
+<title>Cheerslife暖心下午茶</title>
+</head>
+
+<body>
+<div class="detail-header"> <span class="backicon"><i class="proicon icon-back"></i></span> <span class="title-text">商品详情</span> </div>
+<div class="comm-detail">
+<div class="commodity-img">
+<img src="../../static/img/imgpro.png">
+</div>
+<div class="commodity-body">
+<div class="comm-title">可可布林蛋糕</div>
+<div class="comm-price">
+<span class="price-num"><b>￥</b>56</span>
+<div class="price-detail">
+<div class="minus-hidden" style="display:none;"><i class="proicon icon-minus"></i><span class="num">0</span></div><i class="proicon icon-plus" ></i>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="commodity-infor">
+<img src="../../static/img/01.jpg">
+<img src="../../static/img/02.jpg">
+<img src="../../static/img/03.jpg">
+<img src="../../static/img/04.jpg">
+</div>
+</div>
+
+<div class="body-footer comm-footer"> <div class="shopping-cart"><span class="cart-icon"><i class="proicon icon-cart"></i></span><span class="number">0</span><span class="cart-price">￥37</span><span class="send-price">&nbsp;|&nbsp;满68起送</span></div>
+  <div class="settlement" id="buy">结算</div></div>
+</div>
+</body>
+</html>
+<script type="application/javascript">
+function detail_plus(){
+	
+	$(".icon-plus").click(function(){
+		$(".minus-hidden").show();
+		$(".minus-hidden .num").html(parseInt($(".minus-hidden .num").text())+1);
+		number_price=parseInt($(".minus-hidden .num").text());
+		$(".number").html(number_price);
+		});
+	$(".icon-minus").click(function(){
+		var num_minus=$(".minus-hidden .num").text();
+		
+		if(num_minus>1){
+		$(".minus-hidden .num").html(parseInt($(".minus-hidden .num").text())-1);
+		number_price=parseInt($(".minus-hidden .num").text());
+		$(".number").html(number_price);
+		}
+		
+		else if(num_minus<=1){
+			$(".minus-hidden .num").html(parseInt($(".minus-hidden .num").text())-1);
+		number_price=parseInt($(".minus-hidden .num").text());
+		$(".number").html(number_price);
+			$(".minus-hidden").hide();
+			}
+		});	
+	}
+$(document).ready(function(){
+	detail_plus();
+	});
+</script>

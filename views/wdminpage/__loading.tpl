@@ -1,0 +1,1 @@
+<div id="loading" data-minheight="68px"></div>

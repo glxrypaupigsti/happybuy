@@ -1,0 +1,1 @@
+<a class="topNavItem" href="{$docroot}?/Wdmin/logOut/"><span>退出系统</span></a>

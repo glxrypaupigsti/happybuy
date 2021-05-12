@@ -1,0 +1,111 @@
+/* CSS Document */
+*{font-family: "Helvetica Neue",Helvetica,Arial,'Microsoft YaHei',sans-serif; }
+input,textarea{-webkit-appearance:none;appearance:none;box-shadow: none;}
+html,body{ height:100%;}
+body{ margin:0; padding:0;}
+.product-body{ height:100%;}
+ul,li{ list-style:none; padding:0; margin:0;}
+.left-cat{ width:19%; position:fixed;height:100%; background-color:#EEEEEE;    border-right: 1px solid #e9e9e9;box-sizing: border-box;padding-bottom:80px;}
+.left-cat ul{ padding-bottom:100px;}
+.left-cat ul li{ padding:20px 13px; border-bottom:1px #E4E3E3 solid;}
+.left-cat ul li a{ color:#9A9A9A; font-size:13px;}
+.left-cat ul li a:hover, .left-cat ul li a:focus{    text-decoration: none;}
+.left-cat ul li.active{ background-color:#ffffff;margin-right: -1px;border-left: 3px solid #C9B68C;}
+.left-cat ul li .cat-num{     display: inline-block;}
+.left-cat ul li.active a{color:#000000;}
+.left-cat .cat-num{ float: right;margin-top: -10px; font-size: 12px;color: #ffffff;  background-color: #C9B68C; padding: 0 4px;  border-radius: 4px;    margin-right: -2px;}
+.body-header{position: relative;}
+.pro-img img{ width:100%;}
+.right-pro{ width:81%; left:19%; position:absolute; box-sizing: border-box; padding-bottom:80px;    padding-left: 10px;}
+.right-pro ul{ padding-bottom:80px;}
+.titleleft{float:left;margin-top: -4px;}
+.pro-title{    display: inline-block;     padding: 10px 0 5px 0;width:100%;}
+.nutri-img{ position:absolute; right:10px;}
+.nutri-img img{ width:35px;}
+.titleleft span{ display:inline-block;}
+.titleleft .title-text{ width:100%; color:#1F1F1F; font-size:16px;}
+.titleleft .pro-num{    font-size: 12px; color: #ffffff; background-color: #FB6E29; padding: 1px 3px;border-radius: 4px;}
+.pro-intru{ color:#9a9a9a; font-size:14px;}
+.price-num{    float: left; font-size:18px;}
+.price-num b{ font-size:12px;vertical-align: middle;}
+.buy-num{margin-left: 50px;    text-align: right;}
+.buy-num .num{ color:#666666;}
+.pro-price{padding: 10px 0;}
+.right-pro ul li{    border-bottom: 1px solid #efefef; padding-right: 10px;    margin-top: 10px;}
+.titleleft .pro-limit{font-size: 12px; color: #ffffff;background-color:#C9B68B; padding: 1px 3px; border-radius: 4px;}
+.titleleft .sold-out{font-size: 12px; color: #ffffff;background-color:#d3d1d1; padding: 1px 3px; border-radius: 4px;}
+.body-footer{ height:45px; bottom:0; width:100%;line-height: 45px;position:fixed;   }
+.shopping-cart{  width: 72%; float: left; background-color:#000000;    box-sizing: border-box; padding: 0 10px;}
+.settlement{ font-size:16px;    width: 28%;float: left; background-color:#C9B68C; text-align:center; color:#ffffff;}
+.body-footer span{ color:#ffffff;}
+.body-footer .cart-price{ padding-left:5px; font-size:18px;}
+.body-footer .send-price{    color: #7A7879;}
+.body-footer .number{    background-color: #C9B68C; border-radius: 10px;padding: 0px 4px; position: relative; top: -10px; margin-left: -9px;}
+.cart-list{    bottom: 44px; position: fixed;    width: 100%;}
+.list-header{    width: 100%; display: inline-block;background-color: #EEEEEE; height: 40px;  line-height: 40px; padding: 0 10px;}
+.list-header .header-right{position: absolute; right: 10px;}
+.list-header span{ font-size:14px; color:#9A9A9A;}
+.header-right .icon-empty{ font-size:14px; padding-right:10px;}
+.cart-list ul{ padding:10px 0; margin:0; background-color:#ffffff; overflow-y:auto;}
+.pro-buy-num{ float:right;}
+.cart-list ul li{ line-height:1.4; display:inline-block; width:100%;}
+.cart-list ul li .prolist{ font-size:16px;    padding: 0 10px;}
+.pro-buy-num .num { padding:0 5px;}
+.pro-price-num{ padding-right:10px;}
+.cartlist-bg{ width:100%;    display: block;}
+.prolist .title-pro{display: inline-block; white-space: nowrap;text-overflow: ellipsis; overflow: hidden;margin-top: 6px;}
+.buy-num .icon-minus{ padding:8px;    color: #ccc;}
+.icon-minus{ color: #ccc;}
+.buy-num .icon-plus{ padding: 8px 0 8px 8px;}
+.buy-num .hidden{ display:inline-block;}
+.cart-icon .icon-cart{  font-size:30px;    vertical-align: sub;}
+/*商品详情页*/
+.comm-detail-header{ border-bottom:1px solid #efefef;}
+.commodity-img img{ width:100%;}
+.commodity-body{ padding-bottom:50px;}
+.commodity-body .comm-title{ display:inline-block; padding:15px 0; font-size:16px;    white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 100%;}
+.price-detail{height: 20px;line-height: 20px; display:inline-block; float:right;}
+.minus-hidden{ display:inline-block;    }
+.minus-hidden .num{padding: 0 5px;font-size: 14px; color: #666666;}
+.clear{ clear:both;}
+.comm-price{padding-bottom: 15px; border-bottom: 1px solid #efefef;}
+.commodity-infor img{ width:100%;}
+.price-body{ padding:0 10px; padding-bottom:30px;}
+#list-loading {
+  display: none;
+  height: 30px;
+  text-align: center;
+  padding: 10px 0;
+}
+#list-loading img {
+  display: inline-block;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+
+/*预定功能*/
+.header-time{     position: fixed;  text-align: center; line-height:45px;     width: 100%;z-index: 999;}
+.select-time{ background-color:#ffffff;}
+.header-time section{     font-size: 15px;background-color:#eeeeee;    border-bottom: 1px solid #E1E0E0;}
+.select-time ul{ margin:0;}
+.select-time ul li{ border-bottom: 1px solid #efefef;}
+.time-weak{ padding-left:10px;}
+.select-icon{ position:absolute; }
+.select-icon .icon-spread{font-size: 11px;}
+.time-icon .icon-cale{    font-size: 16px; padding-right: 5px;}
+.time-icon{ color:#eeeeee;}
+.header-time-icon{    color: #C9B68C;}
+.mid-mask{    position: fixed;z-index: 999;width: 100%;height: 100%;}
+.top-mask{    position: fixed; width: 100%;  left: 0;z-index: 999;}
+.bot-mask{position: fixed; width: 100%;  left: 0;z-index: 99;}
+.sec-send{ display: inline-block;}
+.sec-send .time-icon{    color: #C9B68C;}
+.sec-btn{    margin: 0 auto;    width: 200px;}
+.mid-mask .mask-1{ width:100%; position:fixed;}
+.mid-mask .mask-2{    width: 101%;height: 100%;}
+.text-left{display: inline-block; width: 175px; text-align: left;}
+.time-day{ padding:0 5px;}
+.select-time ul li .time-icon{ padding-right:4px;}

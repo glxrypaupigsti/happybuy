@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<link rel="stylesheet" href="../../static/css/bootstrap.css" />
+<link rel="stylesheet" href="../../static/css/payment.css" />
+ <script src="../../static/script/jquery-2.1.1.min.js"></script>
+<title>无标题文档</title>
+</head>
+
+<body style=" background-color:#eeeeee;">
+<div class="price-body">
+<div class="input-price"> <input type="number" placeholder="请输入金额"/><span class="empty-btn"><img src="../../static/img/empty.png"/></span></div>
+<div class="actual-price"><span class="actual-text">实付金额</span><input type="text" readonly="readonly" value="￥128" /></div>
+<div class="paynow">立即支付</div>
+</div>
+</body>
+</html>
+<script type="application/javascript">
+$(document).ready(function(){
+	$(".empty-btn").click(function(){
+		$(".input-price input").val("");
+		$(".actual-price input").val("");
+		})
+	})
+</script>
