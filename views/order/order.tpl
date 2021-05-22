@@ -17,7 +17,7 @@
 <script language="javascript" src="{$docroot}static/script/jquery-2.1.1.min.js"></script>
 <script language="javascript" src="{$docroot}static/script/fastclick.js"></script>
 <script src="{$docroot}static/layer/layer.js"></script>
-<title>Cheerslife暖心下午茶</title>
+<title>U时光—小区快乐购商城</title>
 </head>
 
 <body style="background-color:#eeeeee;">

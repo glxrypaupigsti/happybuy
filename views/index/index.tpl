@@ -20,7 +20,7 @@
                  }
                window.addEventListener("DOMContentLoaded",loaded,false);
          </script>
-<title>Cheerslife暖心下午茶</title>
+<title>U时光—小区快乐购商城</title>
 </head>
 
 <body>
