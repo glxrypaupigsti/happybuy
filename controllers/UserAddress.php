@@ -149,43 +149,9 @@ class UserAddress extends Controller {
         $city = $_POST['city'];
         $area = $_POST['area'];
         $address = $_POST['address'];
-        $qian=array(" ","　","\t","\n","\r");$hou=array("","","","","");
-        $searchAddress = "上海市浦东新区".str_replace($qian,$hou,$address);
-        
-        //error_log("===========address==========.".$address);
-        $url = "http://api.map.baidu.com/geocoder/v2/?address=$searchAddress&output=json&ak=0NnLgeO4V61jARaU0PMOT0OB";
-        //error_log("===========================url=====================".$url);
-        $ret = Curl::get($url);
-        $obj=json_decode($ret); 
-        $status = $obj->status;
-        if($status != 0){
-        
-          $this->echoMsg(-1,'地址错误，请认真填写！');
-          die(0);
-        }
-        $confidence = $obj->result->confidence;
-        if($confidence < 70){
-          $this->echoMsg(-1,'地址详细点哦，要不然我们找不到你哦！');
-          die(0);
-        }
-        $location = $obj->result->location;
-        $lat = $location->lat;
-        $lng = $location->lng;
-
-        //$distance = $this->getDistance($lat, $lng,$det_lat,$det_lng) /1000;
-        error_log("======$det_lat,$det_lng,$lat,$lng=====================");
-        $distance = $this->cal_distance($det_lat,$det_lng,$lat,$lng);
-        error_log("==========distance======================".$distance);
-      
-
-        if($distance > $maxDistance){
-            $this->echoMsg(-1,'超出配送范围啦！');
-            die(0);
-        }
-
         $uinfo = $this->User->getUserInfo($openid);
         
-          $array = array(
+        $array = array(
                     'uid' => $uinfo['uid'],
                     'user_name' => $user_name,
                     'province' => "",

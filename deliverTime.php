@@ -11,7 +11,7 @@
     $day = intval(date('j', $select_date));
     $select_date_str = $month_name[$month] . $day . '日';
     
-    $start_deliver_time = 14;
+    $start_deliver_time = 9;
     $end_deliver_time = 18;
     $buffer_time = 60;//minutes
     $col2 = 1;

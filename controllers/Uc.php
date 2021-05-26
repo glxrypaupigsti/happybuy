@@ -126,11 +126,8 @@ class Uc extends Controller {
             $this->assign('userinfo', $userInfo);
         }
 		
-		$userInfo = $this->User->getUserInfoRaw($Uid);
-		if($userInfo && $userInfo['client_phone'] == ''){
-		  $this->show('./uc/register.tpl');
-		  return ;
-		}
+	
+		
         $this->show();
     }
 
