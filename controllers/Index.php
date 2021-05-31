@@ -81,7 +81,7 @@ class Index extends Controller {
             } else {
                 $selected_time = time()+3600*24;
                 $current_hour = idate('H');
-                if ($current_hour > 16) {
+                if ($current_hour > 22) {
                     // today's order window is closed. set to next day
                     $selected_time = strtotime('+1 day');
                 }

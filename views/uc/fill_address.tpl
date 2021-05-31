@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="{$docroot}static/css/bootstrap.css" />
 <script data-main="{$docroot}static/script/Wshop/address.js?v={$smarty.now}" src="{$docroot}static/script/require.min.js"></script> 
 <script src="{$docroot}static/layer/layer.js"></script>
-<title>Cheerslife暖心下午茶</title>
+<title>U时光—小区快乐购商城</title>
 </head>
 
 <body style="background-color:#eeeeee;">
@@ -32,10 +32,10 @@
 <div class="fill-send-address"><span class="address-left">地区</span>
  <input type="hidden" name="province" value="" />
 <input type="hidden" name="city" value="" />
-<input id="txt_area" type="text" class="addtext reg-city" value="上海市-浦东新区" readonly="readonly" />
+<input id="txt_area" type="text" class="addtext reg-city" value="上海市-浦西" readonly="readonly" />
 <input type="hidden" id="hd_area" value="12,124,3269"/>
 </div>
-<div class="send-add-detail"><input placeholder="详细地址：（目前只对陆家嘴地区开放）"  type="text" class="detailtext" id="address"/></div>
+<div class="send-add-detail"><input placeholder="详细地址：（目前只此小区开放）"  type="text" class="detailtext" id="address"/></div>
 <div class="fill-phone"><input placeholder="手机号码："  value="{$phone}" type="text" class="phone-text" id="phone" /></div>
 </div>
 <div class="add-address" id="submit">确认添加</div>
