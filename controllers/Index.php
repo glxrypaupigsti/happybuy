@@ -73,7 +73,7 @@ class Index extends Controller {
                 if (date('Y-m-d') == $_COOKIE['deliver_date']) {
                     // check if order window is closed for TODAY
                     $current_hour = idate('H');
-                    if ($current_hour > 16) {
+                    if ($current_hour > 22) {
                         // today's order window is closed. set to next day
                         $selected_time = strtotime('+1 day');
                     }
